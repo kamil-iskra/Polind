@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+#header {
+    background-image: url("../img/polind-header.gif");
+    height: 1200px;
+}
