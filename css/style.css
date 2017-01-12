@@ -55,14 +55,16 @@ table {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
-.header {
-    background-image: url("../img/polind-header.gif");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 1200px;
-    box-sizing: border-box;
+.container:after {
+    content: "";
+    display: block;
+    clear: both;
 }
-
+.header {
+    height: 740px;
+    background-image: url("../img/polind-header.gif");
+    background-repeat: no-repeat;
+}
 .header a {
     text-decoration: none;
     float: left;
@@ -73,7 +75,6 @@ table {
     padding-right: 10px;
     float: left;
 }
-
 .header a p {
     display: block;
     float: left;
@@ -81,7 +82,6 @@ table {
     font-weight: bold;
     font-size: 1.5rem;
 }
-
 .header a:visited {
     color: #fff;
 }
@@ -90,7 +90,11 @@ table {
     float: right;
     font-size: 0.9rem;
 }
-
+.header nav:after {
+    content: "";
+    display: block;
+    clear: both;
+}
 .header nav ul li {
     display: inline-block;
     margin-left: 22px;
@@ -99,14 +103,11 @@ table {
 .header nav ul li:last-child {
     margin-right: 20px;
 }
-
 .top-section {
-    clear: both;
     margin: 0 auto;
     text-align: center;
     padding-top: 140px;
 }
-
 .top-section .title {
     font-size: 4.6rem;
     font-weight: bold;
@@ -119,7 +120,6 @@ table {
     color: #54585a;
     padding: 5px;
 }
-
 .top-section .search-btn {
     background-color: #ffc74a;
     color: #b98000;
@@ -134,3 +134,103 @@ table {
     font-size: 0.9rem;
     padding-top: 135px;
 }
+.header .categories {
+    margin-top: 25px;
+    float: left;
+    width: 100%;
+}
+.header .categories:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.header .categories {
+    margin-top: 30px;
+    width: 100%;
+}
+.header .categories ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.header .categories ul li {
+    margin: 0;
+}
+.header .categories ul li:first-child, .header .categories ul li:last-child {
+    padding: 0;
+}
+.header .categories .category {
+    width: 215px;
+    height: 277px;
+    background-size: 215px 277px;
+}
+.header .categories .category .title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding-top: 125px;
+}
+.header .categories .category .title-description {
+    display: block;
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 10px;
+}
+.header .categories #photo2 .title, .header .categories #photo4 .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding-top: 190px;
+}
+.header .categories #photo2 .title-description, .header .categories #photo4 .title-description {
+    display: block;
+    text-align: center;
+    font-size: 0.6rem;
+    padding: 8px;
+    color: #ffc74a;
+}
+.header .categories .category .view-btn {
+    background-color: #ffc74a;
+    color: #b98000;
+    font-weight: bold;
+    border: none;
+    padding: 8px 25px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+}
+.header .categories #photo {
+    background-image: url("../img/Photo_dark.png");
+}
+.header .categories #photo2 {
+    background-image: url("../img/Zakopane.png");
+}
+.header .categories #photo3 {
+    background-image: url("../img/Sandomierz.png");
+}
+.header .categories #photo4 {
+    background-image: url("../img/Sopot.png");
+}
+.header .categories #photo5 {
+    background-image: url("../img/Photo_dark2.png");
+}
+
+/* Main */
+.content {
+    background-color: red;
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+    color: black;
+}
+
