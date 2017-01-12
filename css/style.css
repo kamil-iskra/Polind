@@ -19,7 +19,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+/*	font-size: 100%;*/
+    font-size: 62.5%; /* mod */
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -47,14 +48,17 @@ table {
 	border-spacing: 0;
 }
 /* End Reset CSS */
-
+.container {
+    margin: 0 auto;
+    padding: 0;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
 .header {
     background-image: url("../img/polind-header.gif");
     background-size: 100%;
     background-repeat: no-repeat;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
     height: 1200px;
     box-sizing: border-box;
 }
@@ -63,16 +67,19 @@ table {
     text-decoration: none;
     float: left;
 }
-.header a img {
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 15px;
+.logo {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
     float: left;
 }
 
 .header a p {
-    display: inline-block;
-    padding-top: 60px;
+    display: block;
+    float: left;
+    padding-top: 35px;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .header a:visited {
@@ -81,22 +88,49 @@ table {
 
 .header nav {
     float: right;
+    font-size: 0.9rem;
 }
 
 .header nav ul li {
     display: inline-block;
-    margin-left: 45px;
-    margin-top: 60px;
-    margin-right: 40px;
+    margin-left: 22px;
+    margin-top: 30px;
 }
-/*
-.header {
-    background-image: url("../img/polind-header.gif");
-    height: 1200px;
+.header nav ul li:last-child {
+    margin-right: 20px;
 }
 
-.header img {
-    padding-left: 40px;
-    padding-top: 40px;
+.top-section {
+    clear: both;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 140px;
 }
-*/
+
+.top-section .title {
+    font-size: 4.6rem;
+    font-weight: bold;
+}
+.top-section .red {
+    color: #ed6950;
+}
+.top-section .title-description {
+    font-size: 0.9rem;
+    color: #54585a;
+    padding: 5px;
+}
+
+.top-section .search-btn {
+    background-color: #ffc74a;
+    color: #b98000;
+    font-weight: bold;
+    border: none;
+    padding: 15px 20px;
+    margin: 25px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+}
+.top-section .title-description-footer {
+    font-size: 0.9rem;
+    padding-top: 135px;
+}
