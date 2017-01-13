@@ -47,7 +47,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* Box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 /* End Reset CSS */
+
 .container {
     margin: 0 auto;
     padding: 0;
@@ -63,6 +68,7 @@ table {
 .header {
     height: 740px;
     background-image: url("../img/polind-header.gif");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .header a {
@@ -155,6 +161,8 @@ table {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 .header .categories ul li {
     margin: 0;
@@ -165,7 +173,7 @@ table {
 .header .categories .category {
     width: 215px;
     height: 277px;
-    background-size: 215px 277px;
+    background-size: cover;
 }
 .header .categories .category .title {
     font-size: 1.7rem;
@@ -181,7 +189,7 @@ table {
     font-size: 0.7rem;
     padding: 10px;
 }
-.header .categories #photo2 .title, .header .categories #photo4 .title {
+#photo2 .title, #photo4 .title {
     font-size: 1.2rem;
     font-weight: bold;
     width: 100%;
@@ -189,7 +197,7 @@ table {
     display: block;
     padding-top: 190px;
 }
-.header .categories #photo2 .title-description, .header .categories #photo4 .title-description {
+#photo2 .title-description, #photo4 .title-description {
     display: block;
     text-align: center;
     font-size: 0.6rem;
