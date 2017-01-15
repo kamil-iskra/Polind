@@ -161,19 +161,18 @@ table {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
 }
 .header .categories ul li {
     margin: 0;
+    -ms-flex-preferred-size: 215px;
+    flex-basis: 215px;
 }
 .header .categories ul li:first-child, .header .categories ul li:last-child {
     padding: 0;
 }
 .header .categories .category {
-    width: 215px;
     height: 277px;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 .header .categories .category .title {
     font-size: 1.7rem;
