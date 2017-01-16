@@ -48,9 +48,10 @@ table {
 	border-spacing: 0;
 }
 /* Box sizing */
-*, *::before, *::after {
+*, *:before, *:after {
   box-sizing: border-box;
 }
+
 /* End Reset CSS */
 
 .container {
@@ -95,16 +96,22 @@ table {
 .header nav {
     float: right;
     font-size: 0.9rem;
+    margin-top: 30px;
 }
 .header nav:after {
     content: "";
     display: block;
     clear: both;
 }
+.header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
 .header nav ul li {
-    display: inline-block;
     margin-left: 22px;
-    margin-top: 30px;
 }
 .header nav ul li:last-child {
     margin-right: 20px;
@@ -135,6 +142,7 @@ table {
     margin: 25px;
     border-radius: 30px;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 .top-section .title-description-footer {
     font-size: 0.9rem;
@@ -215,6 +223,7 @@ table {
     border-radius: 30px;
     letter-spacing: 1px;
     font-size: 0.7rem;
+    cursor: pointer;
 }
 .header .categories #photo {
     background-image: url("../img/Photo_dark.png");
@@ -233,11 +242,79 @@ table {
 }
 
 /* Main */
-.content {
-    background-color: red;
+main.content {
     width: 100%;
     margin: 0 auto;
-    float: left;
-    color: black;
+    margin-top: 150px;
+    border: 1px solid black;
 }
 
+.search-content {
+    display: -web;kit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    color: #606f81;
+}
+
+.search-content h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.search-content #search-input {
+    margin: 20px auto;
+    width: 540px;
+    padding: 10px 20px;
+    outline: none;
+    border-style: none;
+    border-radius: 20px;
+    box-shadow: 0 0 200px #c0c0c0;
+    background-image: url('../img/search-icon.png');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    font-size: 0.9rem;
+}
+
+.buttons {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%
+}
+.buttons aside {
+    margin: 0 30px;
+}
+
+
+
+.buttons .left .search {
+    background-color: #bdc8d9;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    padding: 6px 13px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.buttons .left .active {
+    background-color: #ffc74a;
+}
+
+.buttons .right .search {
+    color: #8d97a5;
+    font-weight: bold;
+    border: 1px solid #e8ebf1;
+    background: none;
+    padding: 6px 13px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
