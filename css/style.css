@@ -476,11 +476,25 @@ main.content {
 }
 
 .explore .content .picture {
-    width: 100%;
+}
+.explore .content .picture img {
+    width: 43%;
+    height: 43%;
+    margin: 15px 0 0 15px
+}
+.explore .content .picture::before {
+    content: '';
+    display: block;
+    width: 43%;
+    height: 66%;
+    position: absolute;
+    top: 22%;
+    left: 54%;
+    border: 10px solid #ffc74a;
+    overflow: hidden;
+    z-index: -1;
 }
 
-.explore .picture img {
-    width: 42%;
-    margin: 15px 0 0 15px;
-}
+
+
 
