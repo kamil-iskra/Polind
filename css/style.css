@@ -153,11 +153,6 @@ table {
     float: left;
     width: 100%;
 }
-.header .categories:after {
-    content: "";
-    display: block;
-    clear: both;
-}
 .header .categories {
     margin-top: 30px;
     width: 100%;
@@ -245,13 +240,17 @@ table {
 main.content {
     width: 100%;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 120px;
+    padding-top: 30px;
 }
 
 .search-content {
-    display: -web;kit-box;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     color: #606f81;
 }
@@ -279,8 +278,13 @@ main.content {
 
 .buttons {
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%
 }
@@ -319,10 +323,16 @@ main.content {
 }
 
 .boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
-    margin: 30px 130px;
+    margin: 50px 130px 0 130px; /*top right bottom left*/
+    padding-bottom: 20px;
 }
 
 .box {
@@ -367,3 +377,110 @@ main.content {
     background-color: #ffc74a;
     color: #b98000;
 }
+
+.explore {
+    margin: 0 auto;
+    background-color: #f8f9fb;
+    color: #54585a;
+}
+
+.explore:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.explore .content {
+    float: left;
+    margin: 0 130px;
+    padding-top: 30px;
+    position: absolute;
+    z-index: 1;
+}
+
+.explore .content:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.explore .content h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    color: #606f81;
+}
+
+.explore .background {
+    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.explore .background span {
+    color: #f8f9fb;
+    font-weight: bold;
+    font-size: 12rem;
+    text-shadow: 0px 0px 50px rgba(150, 150, 150, 0.4);
+    text-align: center;
+    position: relative;
+    right: -60px;
+}
+
+.explore .content .text-content {
+    float: left;
+    width: 50%;
+    font-size: 0.7rem;
+    color: #606f81;
+    line-height: 1.5rem;
+}
+
+.explore .content .text-content h2 {
+    color: #f8c759;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: left;
+    padding: 15px 0 0 0;
+    margin: 0;
+}
+
+.explore .content .text-content p {
+    padding-top: 15px;
+}
+
+.explore button.active {
+    margin: 80px 0;
+    color: #606f81;
+    font-weight: bold;
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: #ffc74a;
+    color: #b98000;
+}
+
+.explore .content .picture {
+    width: 100%;
+}
+
+.explore .picture img {
+    width: 42%;
+    margin: 15px 0 0 15px;
+}
+
