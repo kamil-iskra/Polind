@@ -1,4 +1,4 @@
 # Polind
-Coding PSD project to HTML5 and CSS3.<br>
+My first PSD to HTML5 and CSS3 project.<br>
 Template: https://symu.co/freebies/templates-4/polind-psd-template/
-<br>Project page: https://kamil-iskra.github.io/Polind/
+<br>Live: https://kamil-iskra.github.io/Polind/
